@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+.buttons {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons #play{
+    font-size: 18px;
+    height: 114px;
+    width: 317px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    box-shadow: 2px 2px 12px 2px black;
+    color: white;
+    margin: 2em;
+}
+.buttons #play:hover{
+    background-color: aliceblue;
+    color: #0A3871;
+    transition: all 1s;
+}
+
+.buttons .new{
+    width: 280px;
+    height: 67px;
+    border-radius: 24px;
+}
+.buttons .new:hover{
+    color: white;
+    background-color: #0A3871;
+    transition: all 1s;
+}
+
+
+#secretWord span{
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    min-width: 40px;
+    margin-right: 6px;
+    text-align: center;
+}
+
+#secretWord{
+    height:3em;
+}
+.hidden{
+    display: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#newWords{
+    height: 80vh;
+    width: 100vw;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    color: #0A3871;
+}
+#newWords .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newWords textarea{
+    width: 50%;
+    height: 50vh;
+    border: none;
+    font-size: 24px;
+    outline: none;
+    resize: none;
+    color: #0A3871;
+}
+
+#newWords p {
+    font-weight: 400;
+    font-size: 24px;
+}
+#newWords section {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+}
+#newWords button{
+    width: 240px;
+    height: 66px;
+    border-radius: 24px;
+    margin-top: 2em;
+    
+}
+#newWords .btn-new{
+    background-color: #0A3871;
+    color: aliceblue;
+}
+
+#newWords .btn-delete{
+    background-color: aliceblue;
+    color: #0A3871;
+    border-color: #0A3871;
+}
+
+#newWords .back{
+    background-color: #0A3871;
+    color: aliceblue;
+}
+
+#newWords .btn-new:hover, #newWords .back:hover{
+    background-color: aliceblue;
+    color: #0A3871;
+    transition: all 1s;
+}
+#newWords .btn-delete:hover{
+    background-color: #0A3871;
+    color: aliceblue;
+    transition: all 1s;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+main .wordsLetters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+#mainContent #keyBoard{
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#mainContent #keyBoard button{
+    padding: 1.5em;
+    background-color: aliceblue;
+    color: #0A3871;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 1px 1px 4px 1px #0A3871;
+
+}
+
+
+#mainContent #keyBoard button:hover{
+    background-color: #0A3871;
+    color: aliceblue;
+    box-shadow: black;
+    transition: all 1s;
+}
+#mainContent #keyBoard button:disabled{
+    color: gray;
+    background-color: darkgrey;
+    box-shadow: none;
+}
+#mainContent div button{
+    width: 250px;
+    height: 66px;
+    border-radius: 24px;
+    margin-top: 1em;
+    background-color: aliceblue;
+    color: #0A3871;
+    border: none;
+    box-shadow: 1px 1px 4px 1px #0A3871;
+}
+#mainContent div .newGame {
+    background-color: #0A3871;
+    color: aliceblue;
+    box-shadow: 1px 1px 4px 1px #0A3871;
+}
+#mainContent div .newGame:hover{
+    background-color: aliceblue;
+    color: #0A3871;
+    border: solid 1px #0A3871;
+    transition: all 1s;
+}
+
+#mainContent div .newGame:disabled{
+    background-color: darkgrey;
+    color: grey;
+    box-shadow: none;
+    border: none;
+}
+
+#mainContent div .desist:hover{
+    background-color: #0A3871;
+    color: aliceblue;
+    transition: all 1s;
+}
+
+#mainContent div .desist:disabled{
+    background-color: darkgrey;
+    box-shadow: none;
+    color: grey;
+}
+#mainContent div{
+    display: flex;
+    gap: 0 2em;
+}
+
+@media  all and (max-width: 1050px){
+#newWords button{
+    width: 190px;
+    height: 50px;
+}
+#newWords section{
+        width: 80%;
+    }
+#mainContent #keyBoard button{
+    padding: 1em;
+}
+#mainContent #keyBoard{
+    width: 435px;
+}
+
+#mainContent div button{
+    height: 3em;
+    width: 18em;
+}
+}
+@media all and (max-width: 765px){
+    #newWords {
+        margin: auto;
+        width: 90%;
+    }
+    #newWords button{
+        width: 150px;
+    }
+    #newWords section{
+            width: 100%;
+        }
+}
+
+
+@media all and (max-width: 575px){
+    #newWords {
+        margin: auto;
+        width: 90%;
+    }
+    #newWords .container div p{
+        font-size: 1em;
+    }
+    #newWords button{
+        width: 120px;
+    }
+    #newWords section{
+        width: 100%;
+        }
+
+    #newWords section{
+        width: 85%;
+    }
+    #mainContent #keyBoard button{
+        padding: 0.8em;
+    }
+    #mainContent #keyBoard{
+        width: 350px;
+    }
+    
+    #mainContent .action-buttons{
+        display: block;
+        width: 70%;
+    }
+    #mainContent div button{
+        height: 3em;
+        width: 100%;
+    }
+    
+} 
+@media all and (max-width: 430px){
+    #newWords section{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        #newWords button{
+            width: 100%;
+            margin-top: 10px;
+        }
+    #img{
+        width: 70%;
+    }
+    #secretWord span{
+        font-size: 1em;
+        min-width: 25px;
+        
+    }
+    
+    #secretWord{
+        height:3em;
+    }
+
+}
+
+

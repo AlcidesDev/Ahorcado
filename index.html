@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del ahorcado</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logoAlura">
+        <h1>Ahorcado</h1>
+    </header>
+    <section id="buttons" class="buttons">
+        <button id="play">Iniciar Juego</button>
+        <button id="new"class="new">Agregar nueva palabra</button> 
+    </section>
+    <main id="mainContent" class="hidden">
+        <img id="img" src="./img/0.png" alt="ahorcado">
+        <div class="wordsLetters">
+            <p id="secretWord"></p>
+            <p id="fails"></p>
+            <p id="result"></p>
+        </div>
+        <section id="keyBoard">
+                <button>Q</button>
+                <button>W</button>
+                <button>E</button>
+                <button>R</button>
+                <button>T</button>
+                <button>Y</button>
+                <button>U</button>
+                <button>I</button>
+                <button>O</button>
+                <button>P</button>
+                <button>A</button>
+                <button>S</button>
+                <button>D</button>
+                <button>F</button>
+                <button>G</button>
+                <button>H</button>
+                <button>J</button>
+                <button>K</button>
+                <button>L</button>
+                <button>Ñ</button>
+                <button>Z</button>
+                <button>X</button>
+                <button>C</button>
+                <button>V</button>
+                <button>B</button>
+                <button>N</button>
+                <button>M</button>
+        </section>
+        <div class="action-buttons">
+            <button id="newGame" class="newGame">Nuevo Juego</button>
+            <button id="desist" class="desist">Desistir</button>
+        </div>
+        
+    </main>
+    <div id="newWords" class="hidden">
+        <div class="container">
+            <div>
+                <textarea id="inputWord" name=""  placeholder="Ingrese una palabra"></textarea>
+                <p id="list"></p>
+                <p><img src="./img/Vector.png" alt="warning">  Máx 8 letras</p>
+            </div>
+            <section>
+                <button id="newWord" class="btn-new">Agregar palabra</button>
+                <button id="deleteWord" class="btn-delete">Borrar palabra</button>
+                <button id="back" class="back">Volver</button>
+            </section>
+        </div>
+        
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
