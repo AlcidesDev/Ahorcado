@@ -1,6 +1,16 @@
 *{
     margin: 0;
 }
+.span-alert-win{
+    text-shadow: 3px 3px 3px rgb(0, 255, 55);
+    color: green;
+    font-size: 2em;
+}
+.span-alert-lose{
+    color: red;
+    text-shadow: 2px 2px 3px rgb(255, 0, 106);
+    font-size: 2em;
+}
 header{
     display: flex;
     justify-content: flex-start;
@@ -319,5 +329,15 @@ main .wordsLetters{
     }
 
 }
-
+@media all and (max-width: 430px){
+    header{
+        padding: 1em;
+    }
+    #mainContent #keyBoard{
+        width: 270px;
+    }
+    #mainContent #keyBoard button{
+        padding: 0.5em;
+    }
+}
 

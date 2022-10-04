@@ -37,9 +37,17 @@ function createNewWord() {
     
         result = inputWord.value.toUpperCase();
         for (let i = 0; i < words.length; i++) {
-            if (result !== words[i] && result.length <= 8){
+            if (words.includes(result) !== true && result.length <= 8){
                 words.push(result);
                 break;
+        }else{
+            
+                Swal.fire ({
+                    title:'¡ERROR!',
+                    html:'<span class="span-alert-lose">¡LA PALABRA YA ESTÁ EN LA LISTA <br> O <br> ¡HAS SUPERADO EL MÁXIMO DE 8 LETRAS!</span>',
+                    icon:'error'
+                });
+            
         }}
         console.log(words);
         inputWord.classList.remove('.hidden');
@@ -129,10 +137,18 @@ function clickWord (){
 
     if (fails == 7){
         gameOver();
-        id('result').innerHTML = "Perdiste"
+        Swal.fire ({
+            title:'¡Vuelve a intentarlo!',
+            html:'<span class="span-alert-lose">¡HAS PERDIDO!</span>',
+            icon:'error'
+        });
     } else if(success == randomWord.length){
         gameOver();
-        id('result').innerHTML = "Ganaste"
+        Swal.fire ({
+            title:'¡Felicidades!',
+            html:'<span class="span-alert-win">¡HAS GANADO!</span>',
+            icon: 'success'
+        });
     }
 }
 
