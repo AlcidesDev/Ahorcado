@@ -1,6 +1,13 @@
 *{
     margin: 0;
 }
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/ahorcadoBG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .span-alert-win{
     text-shadow: 3px 3px 3px rgb(0, 255, 55);
     color: green;
@@ -17,6 +24,7 @@ header{
     align-items: center;
     gap: 2em;
     padding: 2em;
+    color: white;
 }
 
 .buttons {
@@ -33,14 +41,14 @@ header{
     height: 114px;
     width: 317px;
     border-radius: 24px;
-    background-color: #0A3871;
+    background-color: #5a0306;
     box-shadow: 2px 2px 12px 2px black;
     color: white;
     margin: 2em;
 }
 .buttons #play:hover{
-    background-color: aliceblue;
-    color: #0A3871;
+    background-color: rgb(41, 37, 37);
+    color: red;
     transition: all 1s;
 }
 
@@ -51,7 +59,7 @@ header{
 }
 .buttons .new:hover{
     color: white;
-    background-color: #0A3871;
+    background-color: #5a0306;
     transition: all 1s;
 }
 
@@ -60,10 +68,11 @@ header{
     display: inline-block;
     vertical-align: bottom;
     font-size: 2em;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     min-width: 40px;
     margin-right: 6px;
     text-align: center;
+    color: white;
 }
 
 #secretWord{
@@ -78,11 +87,7 @@ header{
 #newWords{
     height: 80vh;
     width: 100vw;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    color: #0A3871;
+    color: white;
 }
 #newWords .container {
     width: 100%;
@@ -100,7 +105,8 @@ header{
     font-size: 24px;
     outline: none;
     resize: none;
-    color: #0A3871;
+    color: white;
+    background-color: #5a030600;
 }
 
 #newWords p {
@@ -120,28 +126,28 @@ header{
     
 }
 #newWords .btn-new{
-    background-color: #0A3871;
+    background-color: #5a0306;
     color: aliceblue;
 }
 
 #newWords .btn-delete{
-    background-color: aliceblue;
-    color: #0A3871;
-    border-color: #0A3871;
+    background-color: white;
+    color: #5a0306;
+    border-color: #5a0306;
 }
 
 #newWords .back{
-    background-color: #0A3871;
+    background-color: #5a0306;
     color: aliceblue;
 }
 
 #newWords .btn-new:hover, #newWords .back:hover{
     background-color: aliceblue;
-    color: #0A3871;
+    color: #5a0306;
     transition: all 1s;
 }
 #newWords .btn-delete:hover{
-    background-color: #0A3871;
+    background-color: #5a0306;
     color: aliceblue;
     transition: all 1s;
 }
@@ -160,6 +166,9 @@ main .wordsLetters{
     flex-direction: column;
     margin-bottom: 1em;
 }
+main .wordsLetters #fails{
+    color: red;
+}
 
 #mainContent #keyBoard{
     width: 550px;
@@ -171,16 +180,16 @@ main .wordsLetters{
 #mainContent #keyBoard button{
     padding: 1.5em;
     background-color: aliceblue;
-    color: #0A3871;
+    color: #5a0306;
     border: none;
     border-radius: 12px;
-    box-shadow: 1px 1px 4px 1px #0A3871;
+    box-shadow: 1px 1px 4px 1px #5a0306;
 
 }
 
 
 #mainContent #keyBoard button:hover{
-    background-color: #0A3871;
+    background-color: #5a0306;
     color: aliceblue;
     box-shadow: black;
     transition: all 1s;
@@ -196,19 +205,19 @@ main .wordsLetters{
     border-radius: 24px;
     margin-top: 1em;
     background-color: aliceblue;
-    color: #0A3871;
+    color: #5a0306;
     border: none;
-    box-shadow: 1px 1px 4px 1px #0A3871;
+    box-shadow: 1px 1px 4px 1px #5a0306;
 }
 #mainContent div .newGame {
-    background-color: #0A3871;
+    background-color: #5a0306;
     color: aliceblue;
-    box-shadow: 1px 1px 4px 1px #0A3871;
+    box-shadow: 1px 1px 4px 1px #5a0306;
 }
 #mainContent div .newGame:hover{
-    background-color: aliceblue;
-    color: #0A3871;
-    border: solid 1px #0A3871;
+    background-color: white;
+    color: #5a0306;
+    border: solid 1px #5a0306;
     transition: all 1s;
 }
 
@@ -220,7 +229,7 @@ main .wordsLetters{
 }
 
 #mainContent div .desist:hover{
-    background-color: #0A3871;
+    background-color: #5a0306;
     color: aliceblue;
     transition: all 1s;
 }
@@ -329,7 +338,7 @@ main .wordsLetters{
     }
 
 }
-@media all and (max-width: 430px){
+@media all and (max-width: 375px){
     header{
         padding: 1em;
     }
