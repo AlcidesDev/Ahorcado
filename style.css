@@ -28,8 +28,8 @@ header{
 }
 
 .buttons {
-    height: 80vh;
-    width: 100vw;
+    height: 75vh;
+    width: 99vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +85,7 @@ header{
 }
 
 #newWords{
-    height: 80vh;
+    height: 75vh;
     width: 100vw;
     color: white;
 }
@@ -153,6 +153,7 @@ header{
 }
 
 main{
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,6 +245,25 @@ main .wordsLetters #fails{
     gap: 0 2em;
 }
 
+footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color:white;
+}
+
 @media  all and (max-width: 1050px){
 #newWords button{
     width: 190px;
@@ -275,6 +295,13 @@ main .wordsLetters #fails{
     #newWords section{
             width: 100%;
         }
+
+    footer ul{
+        flex-direction: column;
+        width: auto;
+        text-align: center;
+        gap: 2px;
+    }
 }
 
 
