@@ -296,6 +296,9 @@ footer ul li a{
             width: 100%;
         }
 
+    footer {
+        margin-top: 2em;
+    }
     footer ul{
         flex-direction: column;
         width: auto;
